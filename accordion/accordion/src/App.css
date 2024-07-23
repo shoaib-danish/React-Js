@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Dancing+Script:wght@700&family=Labrada:ital,wght@1,300&family=Lobster&family=Merienda:wght@300&family=Moirai+One&family=Pacifico&family=Permanent+Marker&family=Playfair+Display&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background-color: #122959;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: 3px solid white;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+
+  box-shadow: 4px 12px 8px 0 rgba(0, 0, 0, 0.6), 0 12px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+h1:hover {
+  transition: transform 0.5s;
+  transform: scale(1.2);
+}
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.item {
+  padding: 20px 24px;
+  padding-right: 48px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  background-color: #2e2e2e;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 4px 12px 8px 0 rgba(0, 0, 0, 0.6),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.item:hover {
+  background-color: #fff;
+  color: #2e2e2e;
+  box-shadow: 0 0 8px white;
+  border: 4px solid slategray;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ced4da;
+}
+
+.title,
+.icon {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Bricolage Grotesque";
+}
+
+.content-box {
+  grid-column: 2 / -1;
+  padding-bottom: 16px;
+  line-height: 1.6;
+  font-family: "Merienda";
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.content-box ul {
+  color: #868e96;
+  margin-left: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* OPEN STATE */
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.open .number {
+  color: #087f5b;
+}

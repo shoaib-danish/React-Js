@@ -1,0 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Labrada:ital,wght@1,300&family=Lobster&family=Moirai+One&family=Permanent+Marker&family=Playfair+Display&family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
